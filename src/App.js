@@ -6,17 +6,22 @@ import Detail from "./routes/Detail";
 import About from "./routes/About";
 import RegisterBeverage from "./routes/RegisterBeverage";
 import UpdateBeverage from "./routes/UpdateBeverage";
+import NotFound from "./routes/NotFound";
 
 function App() {
+  // TODO refactoring routing using nested routing
+  // https://reactrouter.com/docs/en/v6/getting-started/tutorial#nested-routes
+
   return (
-    <BrowserRouter basename="/pages">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/mypage" element={<MyPage/>}/>
-        <Route path="/detail/1" element={<Detail/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/register-beverage" element={<RegisterBeverage/>}/>
-        <Route path="/update-beverage" element={<UpdateBeverage/>}/>
+        <Route path="/pages/mypage" element={<MyPage/>}/>
+        <Route path="/pages/detail/:id" element={<Detail/>}/>
+        <Route path="/pages/about" element={<About/>}/>
+        <Route path="/pages/register-beverage" element={<RegisterBeverage/>}/>
+        <Route path="/pages/update-beverage" element={<UpdateBeverage/>}/>
+        <Route path="*" element={<NotFound/>}/>
       </Routes>
     </BrowserRouter>
   );
