@@ -8,7 +8,7 @@ import RegisterBeverage from "./routes/RegisterBeverage";
 import UpdateBeverage from "./routes/UpdateBeverage";
 import NotFound from "./routes/NotFound";
 
-function App() {
+const App = () => {
   // TODO refactoring routing using nested routing
   // https://reactrouter.com/docs/en/v6/getting-started/tutorial#nested-routes
 
