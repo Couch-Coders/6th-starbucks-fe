@@ -1,7 +1,10 @@
 import React from 'react';
 
 const NotFound = () => {
-    return <p>page not found.</p>
+    return <>
+        <h1>Oops!</h1>
+        <p>page not found.</p>
+    </>
 }
 
 export default NotFound;
