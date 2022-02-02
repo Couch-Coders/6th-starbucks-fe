@@ -5,7 +5,7 @@ import "antd/dist/antd.min.css";
 import Router from "./routes/Router";
 import Header from './components/Header';
 
-const {Header: HeaderWrapper, Content: ContentWrapper, Footer: FooterWrapper} = Layout
+const {Content: ContentWrapper, Footer: FooterWrapper} = Layout
 
 const App = () => {
   // TODO refactoring routing using nested routing
@@ -13,9 +13,7 @@ const App = () => {
 
   return (
       <Layout>
-        <HeaderWrapper className="header">
-            <Header/>
-        </HeaderWrapper>
+        <Header/>
         <ContentWrapper>
           <Router/>
         </ContentWrapper>
