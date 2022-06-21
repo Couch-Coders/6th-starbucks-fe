@@ -15,6 +15,7 @@ const App = () => {
     // TODO refactoring routing using nested routing
     // https://reactrouter.com/docs/en/v6/getting-started/tutorial#nested-routes
 
+    // TODO refactor below values
     const firebaseConfig = {
         apiKey: "AIzaSyDodKEG9Mo5n4pS6w8ffuYEA3g7YGnCzJI",
         authDomain: "starbucks-custom-beverage.firebaseapp.com",
